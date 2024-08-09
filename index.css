@@ -1,0 +1,90 @@
+body{
+    /* background-color: antiquewhite; */
+    padding: 10px;
+}
+.wrapper{
+    /* background-color: blue; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.header{
+    /* height: 150px; */
+    /* background-color: beige; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    /* padding: 10px; */
+    margin: 10px 10px 10% 10px ;
+    /* border: 1px solid rebeccapurple; */
+    position: sticky;
+    border-bottom: 5px solid black;
+
+}
+.title{
+    /* background-color: blue; */
+    /* padding: 10px; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    /* width: 35%; */
+}
+
+hr{
+    height: 50px;
+    background-color: red;
+    width: 15px;
+    margin: 15px;
+}
+.menu{
+    width: 60%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+.hero{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 450px;
+    justify-content: space-around;
+
+}
+
+.hero-title{
+    padding-top: 2cm;
+    width: 50%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+.hero-title p{
+    padding: 20px 20px 20px 0px;
+    font-size: large;
+}
+.download{
+    /* margin: 1cm; */
+    background-color: black;
+    height: 60px;
+    align-content: center;
+    width: 30%;
+    text-align: center;
+    border-radius: 25px;
+    font-size: large;
+}
+.banner{
+    margin: 20px;
+    display: flex;
+    font-size: 40px;
+    border: 10px;
+    background-color: blue;
+
+}
