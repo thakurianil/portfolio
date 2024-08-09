@@ -1,31 +1,32 @@
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 body{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     padding: 10px;
 }
 .wrapper{
-    /* background-color: blue; */
     margin: 10px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 .header{
     /* height: 150px; */
-    background-color: beige;
+    background-color: white;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
     padding: 10px;
     /* margin: 10px 10px 10% 10px ; */
     position: sticky;
     top: 0;
-    overflow: hidden;
-    border-bottom: 5px solid black;
-
+    /* overflow: hidden; */
+    box-shadow: 0 15px 5px 0px rgba(0,0,0,0.75);
+    font-weight: bolder;
 }
 
 .title{
@@ -34,7 +35,7 @@ body{
     font-size: 30px;
     display: flex;
     align-items: center;
-    margin: 1cm;
+    /* margin: 1cm; */
     /* width: 45%; */
 }
 
@@ -42,36 +43,39 @@ body{
     height: 60px;
     background-color: red;
     width: 10px;
-    margin: 15px;
+    margin: 25px;
 }
 .menu{
-    width: 60%;
-    /* background-color: aliceblue; */
+    /* width: 60%; */
+    /* background-color:black; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-evenly;
     font-size: 30px;
 }
+.menu div{
+    padding: 1cm;
+}
 .hero{
-    background-color: orange;
+    background-color: orangered;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 450px;
-    justify-content: space-around;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    height: 90%;
+    justify-content: space-between;
+    /* margin: 2cm 0 2cm 0  ; */
 
 }
 
 .hero-title{
-    padding-top: 2cm;
-    width: 50%;
+    padding: 2cm;
+    /* width: 50%; */
     font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
     color: white;
 
 }
 .hero-title p{
-    padding: 20px 20px 20px 0px;
+    padding: 20px 0px 20px 0px;
     font-size: large;
 }
 .download{
@@ -79,10 +83,12 @@ body{
     background-color: black;
     height: 60px;
     align-content: center;
-    width: 30%;
+    /* width: 30%; */
     text-align: center;
     border-radius: 25px;
     font-size: large;
+    box-shadow: 0 15px 15px 0px rgba(0,0,0,0.75);
+
 }
 .banner{
     margin-top: 8%;
@@ -91,11 +97,14 @@ body{
     /* border: 10px; */
     justify-content: space-evenly;
     /* height: 40%; */
-    border: 3px solid black;
+    border: 5px solid black;
     border-radius: 100px;
+    box-shadow: 10px 15px 5px 0px rgba(0,0,0,0.75);
+
 }
 .banner1 { 
-    height: 200px;
+    /* height: 200px; */
+    height: auto;
     align-content: center;
     display: flex;
     justify-content: center;
@@ -132,7 +141,7 @@ body{
 }
 .skill{
     margin: 10cm 0 10cm 0;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -154,8 +163,23 @@ body{
     text-align: center;
     font-size: 30px;
 }
+.about1{
+    background-color:bisque;
+}
+.aboutme{
+    font-size: 30px;
+    text-align: center;
+}
+.aboutme-body{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
 .social-contact{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     font-size: 30px;
     text-align: center;
     padding: 3cm;
@@ -179,27 +203,31 @@ body{
 }
 .email{
     display: flex;
+    padding: 1cm;
     align-items: center;
     justify-content: center;
     background-color: black;
     color: white;
     height: 200px;
-    width: 50%;
+    /* width: 50%; */
     font-size: 40px;
     border-radius: 150px;
+    box-shadow: 0 15px 5px 0px rgba(0,0,0,0.75);
+
 }
 footer{
     background-color: black;
 }
 .scroll{
-    height: 100px;
-    width: 100px;
+    justify-content: right;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     bottom: 50px;
-    right: 50px;
-    position: fixed;
+    right: 100px;
+    position:fixed;
     z-index: 1000;
-    font-size: 50px;
+    font-size: 130px;
     background-color: orangered;
     color: white;
 
