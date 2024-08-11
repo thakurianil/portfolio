@@ -130,6 +130,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 .skills i{
     font-size: 250px;
