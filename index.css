@@ -12,6 +12,7 @@ body{
     flex-direction: column;
 }
 .header{
+    /* width: 100%; */
     /* height: 150px; */
     background-color: white;
     display: flex;
@@ -161,6 +162,18 @@ body{
     /* align-content: center; */
     text-align: center;
     font-size: 30px;
+}
+.projects{
+    display: flex;
+    margin: 100px;
+    gap: 20px;
+    /* width: 70%; */
+    /* justify-content: space-evenly; */
+}
+.projectflex{
+    background-color: blue;
+    height: 500px;
+    width: 1000px;
 }
 .about1{
     background-color:bisque;
