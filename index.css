@@ -136,6 +136,10 @@ body{
     font-size: 250px;
     margin: 10%;
 }
+.recentproject{
+    margin: 1cm;
+}
+
 .recentproject-heading{
     text-align: center;
     font-size: 30px;
@@ -150,6 +154,9 @@ body{
     justify-content: center;
     gap: 1cm;
 
+}
+.project-details a{
+    border: 5px solid black;
 }
 .about1{
     background-color:bisque;
