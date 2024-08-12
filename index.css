@@ -140,15 +140,16 @@ body{
     text-align: center;
     font-size: 30px;
 }
-.projectsdone{
-    display: flex;
-    margin: 100px;
-    gap: 20px;
-}
+
 .projectflex{
-    background-color: blue;
-    height: 500px;
-    width: 1000px;
+    text-align: center;
+}
+.project-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1cm;
+
 }
 .about1{
     background-color:bisque;
