@@ -143,10 +143,9 @@ body {
 }
 
 .banner1 {
-    height: auto;
-    align-content: center;
+    /* align-content: center; */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -348,20 +347,7 @@ footer {
 
 
 @media screen and (width <1200px) {
-   
-    .header {
-        /* background-color: white; */
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        height: auto;
-        /* flex-direction: column; */
-        position: sticky;
-        top: 0;
-        box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.75);
-        font-weight: bolder;
-    }
-    
+
     .dropbtn {
         background-color: var(--primary-color);
         color: white;
@@ -406,6 +392,11 @@ footer {
       
       .dropdown:hover .dropbtn {
         background-color: var(--secondary-color);
+      }
+
+      .banner{
+        display: flex;
+        flex-direction: column;
       }
 
 }
