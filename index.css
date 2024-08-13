@@ -1,9 +1,8 @@
-:root{
+:root {
     --background-color: white;
     --text-color: var(white);
     --primary-color: orangered;
     --secondary-color: black;
-
 }
 
 .darkmode button {
@@ -14,11 +13,9 @@
     text-decoration: none;
 }
 
-.darkmode button:hover{
+.darkmode button:hover {
     background-color: var(--secondary-color);
 }
-
-
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -63,13 +60,16 @@ body {
     width: 10px;
     margin: 25px;
 }
-.dropbtn{
+
+.dropbtn {
     visibility: hidden;
 }
-.dropdown{
+
+.dropdown {
     justify-content: center;
     align-content: center;
 }
+
 .dropdown-content {
     display: flex;
     justify-content: space-evenly;
@@ -87,32 +87,32 @@ body {
     text-decoration: underline;
 }
 
-.darkmode{
+.darkmode {
     height: 100px;
     align-content: center;
     padding: 50px;
 }
-.darkmode i{
+
+.darkmode i {
     font-size: 50px;
 }
-
 
 .hero {
     background-color: var(--primary-color);
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
+    /* height: 900px; */
+    /* width: 100vw; */
     /* flex-wrap: wrap; */
-    height: 90%;
-    justify-content: space-between;
+    /* height: 90%; */
+    justify-content: space-around;
     /* margin: 2cm 0 2cm 0  ; */
-
 }
 
 .hero-title {
     padding: 2cm;
     font-size: 30px;
     color: white;
-
 }
 
 .hero-title p {
@@ -128,7 +128,12 @@ body {
     text-align: center;
     border-radius: 25px;
     box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
+}
 
+.hero-image img {
+    padding: -2cm;
+    margin: -8cm 0cm -1cm 0;
+    width: 600px;
 }
 
 .banner {
@@ -139,7 +144,6 @@ body {
     border: 5px solid var(--secondary-color);
     border-radius: 100px;
     box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.75);
-
 }
 
 .banner1 {
@@ -223,13 +227,13 @@ body {
     margin: 1cm;
 }
 
-.project-details iframe{
+.project-details iframe {
     height: 800px;
     width: 800px;
 }
+
 .project-details a {
     box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
-
 }
 
 .about1 {
@@ -245,7 +249,13 @@ body {
     display: flex;
     flex-direction: row;
     font-size: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.aboutme-body div img {
+    width: 600px;
+    margin: -9cm 0 -1cm 0;
+    transform: scaleX(-1);
 }
 
 .social-contact {
@@ -273,7 +283,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 4cm;
-
 }
 
 .email {
@@ -289,7 +298,6 @@ body {
     box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.75);
     text-decoration: none;
 }
-
 
 footer {
     background-color: var(--secondary-color);
@@ -310,7 +318,6 @@ footer {
     color: white;
     align-content: center;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    
 }
 
 .footer-links {
@@ -345,9 +352,7 @@ footer {
     font-size: 25px;
 }
 
-
 @media screen and (width <1200px) {
-
     .dropbtn {
         background-color: var(--primary-color);
         color: white;
@@ -358,45 +363,44 @@ footer {
         border-radius: 50px;
         visibility: visible;
         box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
 
-      }
-      
-      .dropdown {
+    .dropdown {
         position: relative;
         display: inline-block;
-      }
-      
-      .dropdown-content {
+    }
+
+    .dropdown-content {
         display: none;
         position: absolute;
         right: 0;
-        background-color:var(--primary-color);
+        background-color: var(--primary-color);
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-      }
-      
-      .dropdown-content a {
+    }
+
+    .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-      }
-      
-      .dropdown-content a:hover {background-color: var(--background-color);}
-      
-      .dropdown:hover .dropdown-content {
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--background-color);
+    }
+
+    .dropdown:hover .dropdown-content {
         display: block;
+    }
 
-      }
-      
-      .dropdown:hover .dropbtn {
+    .dropdown:hover .dropbtn {
         background-color: var(--secondary-color);
-      }
+    }
 
-      .banner{
+    .banner {
         display: flex;
         flex-direction: column;
-      }
-
+    }
 }
