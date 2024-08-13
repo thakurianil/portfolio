@@ -1,49 +1,79 @@
+:root{
+    --background-color: white;
+    --text-color: var(white);
+    --primary-color: orangered;
+    --secondary-color: black;
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    /* background-color: antiquewhite; */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
+
+body {
     padding: 10px;
 }
-.wrapper{
+
+.wrapper {
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
-.header{
-     background-color: white;
+
+.header {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     position: sticky;
     top: 0;
-    box-shadow: 0 15px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.75);
     font-weight: bolder;
 }
 
-.title{
+.title {
     font-size: 30px;
     display: flex;
     align-items: center;
 }
 
-.title hr{
+.title hr {
     height: 60px;
     background-color: red;
     width: 10px;
     margin: 25px;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-evenly;
     font-size: 30px;
 }
-.menu div{
+
+.menu a {
     padding: 1cm;
+    text-decoration: none;
+    font-display: none;
+    color: var(--secondary-color);
 }
-.hero{
-    background-color: orangered;
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.darkmode{
+    height: 100px;
+    align-content: center;
+    padding: 50px;
+}
+.darkmode i{
+    font-size: 50px;
+}
+
+
+.hero {
+    background-color: var(--primary-color);
     display: flex;
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
@@ -53,78 +83,88 @@ body{
 
 }
 
-.hero-title{
+.hero-title {
     padding: 2cm;
     font-size: 30px;
     color: white;
 
 }
-.hero-title p{
+
+.hero-title p {
     padding: 20px 0px 20px 0px;
     font-size: large;
 }
-.download{
-    background-color: black;
+
+.download {
+    background-color: var(--secondary-color);
     height: 60px;
     align-content: center;
     text-align: center;
     border-radius: 25px;
     font-size: large;
-    box-shadow: 0 15px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
 
 }
-.banner{
+
+.banner {
     margin-top: 8%;
     display: flex;
     font-size: 40px;
     justify-content: space-evenly;
-    border: 5px solid black;
+    border: 5px solid var(--secondary-color);
     border-radius: 100px;
-    box-shadow: 10px 15px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
-.banner1 { 
+
+.banner1 {
     height: auto;
     align-content: center;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-.banner hr{
+.banner hr {
     height: 100px;
     justify-content: center;
     align-content: center;
     margin: 45px;
     width: 10px;
-    background-color: black;
+    background-color: var(--secondary-color);
 }
-.banner i{
+
+.banner i {
     font-size: 70px;
     color: white;
 }
-.reward-background{
+
+.reward-background {
     margin: 20px;
     height: 100px;
     width: 100px;
-    background-color: orangered;
+    background-color: var(--primary-color);
     border-radius: 50%;
     align-content: center;
     text-align: center;
 }
-.reward-font{
+
+.reward-font {
     padding: 15px;
 }
-.reward-font div{
-    color: orangered;
+
+.reward-font div {
+    color: var(--primary-color);
 }
-.skill{
+
+.skill {
     margin: 10cm 0 10cm 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.skills{
+
+.skills {
     font-size: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -132,126 +172,147 @@ body{
     align-items: center;
     align-content: center;
 }
-.skills i{
+
+.skills i {
     font-size: 250px;
     margin: 10%;
 }
-.recentproject{
+
+.recentproject {
     margin: 1cm;
 }
 
-.recentproject-heading{
+.recentproject-heading {
     text-align: center;
     font-size: 30px;
 }
 
-.projectflex{
+.projectflex {
     text-align: center;
 }
-.project-details{
+
+.project-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1cm;
 
 }
-.project-details a{
-    border: 5px solid black;
+
+.project-details a {
+    box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
+
 }
-.about1{
-    background-color:bisque;
+
+.about1 {
+    background-color: bisque;
 }
-.aboutme{
+
+.aboutme {
     font-size: 30px;
     text-align: center;
 }
-.aboutme-body{
+
+.aboutme-body {
     display: flex;
     flex-direction: row;
     font-size: 30px;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
-.social-contact{
+.social-contact {
     /* background-color: aliceblue; */
     font-size: 30px;
     text-align: center;
     padding: 3cm;
 }
 
-.social-container{
+.social-container {
     justify-content: space-between;
     font-size: 100px;
     margin: 2cm;
 }
 
-.social-container i{
+.social-container a {
     padding: 80px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-display: none;
 }
-.contact-email{
+
+.contact-email {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 4cm;
 
 }
-.email{
+
+.email {
     display: flex;
     padding: 1cm;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--secondary-color);
     color: white;
-    height: 200px;
-    /* width: 50%; */
+    height: 60px;
     font-size: 40px;
     border-radius: 150px;
-    box-shadow: 0 15px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
-footer{
-    background-color: black;
+
+footer {
+    background-color: var(--secondary-color);
 }
-.scroll{
+
+.scroll {
+    display: inline-block;
     justify-content: right;
     height: 200px;
     width: 200px;
     border-radius: 50%;
     bottom: 50px;
     right: 100px;
-    position:fixed;
+    position: fixed;
     z-index: 1000;
     font-size: 130px;
-    background-color: orangered;
+    background-color: var(--primary-color);
     color: white;
-
+    align-content: center;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    
 }
-.footer-links{
+
+.footer-links {
     display: flex;
     justify-content: space-evenly;
     font-size: 25px;
     color: white;
     margin: 2cm;
 }
-.links{
+
+.links {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
-.links a{
+
+.links a {
     margin: 10px;
     color: white;
     text-decoration: none;
     font-display: none;
 }
-.links a:hover{
+
+.links a:hover {
     text-decoration: underline;
 }
 
-.bottom-text{
+.bottom-text {
     height: 100px;
     color: white;
     text-align: center;
     font-size: 25px;
 }
+
