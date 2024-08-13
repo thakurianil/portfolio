@@ -5,6 +5,21 @@
     --secondary-color: black;
 
 }
+
+.darkmode button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.darkmode button:hover{
+    background-color: var(--secondary-color);
+}
+
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
@@ -12,7 +27,11 @@
 }
 
 body {
-    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .wrapper {
@@ -97,11 +116,11 @@ body {
 
 .download {
     background-color: var(--secondary-color);
-    height: 60px;
+    height: 100px;
+    padding: 20px;
     align-content: center;
     text-align: center;
     border-radius: 25px;
-    font-size: large;
     box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
 
 }
@@ -196,9 +215,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1cm;
-
+    margin: 1cm;
 }
 
+.project-details iframe{
+    height: 800px;
+    width: 800px;
+}
 .project-details a {
     box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
 
@@ -259,8 +282,9 @@ body {
     font-size: 40px;
     border-radius: 150px;
     box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.75);
-
+    text-decoration: none;
 }
+
 
 footer {
     background-color: var(--secondary-color);
@@ -316,3 +340,10 @@ footer {
     font-size: 25px;
 }
 
+
+@media (prefers-color-scheme: dark) {
+    body {
+       background-color: black;
+       
+    }
+}
