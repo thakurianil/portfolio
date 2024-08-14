@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
-<body class="dark"> <!-- Wrapper for page -->
+<body class="dark"> 
+    <input id="darkmode" type="checkbox" >  </input> <!-- Hero section -->
+
+    <!-- Wrapper for page -->
     <div class="wrapper" id="wrapper"> <!-- header part -->
         <div class="header">
             <div class="title">
@@ -18,11 +21,18 @@
                 <div class="title-font"> Full Stack Developer </div>
             </div>
             <div class="dropdown"> <button class="dropbtn">Menu</button>
-                <div class="dropdown-content"> <a href="#home">Home</a> <a href="#skills">Skills</a> <a
-                        href="#projects">Projects</a> <a href="#about">About</a> <a href="#contact">Contact</a> </div>
+                <div class="dropdown-content"> 
+                    <a href="#home">Home</a> 
+                    <a href="#skills">Skills</a> 
+                    <a href="#projects">Projects</a> 
+                    <a href="#about">About</a> 
+                    <a href="#contact">Contact</a> 
+                </div>
             </div>
         </div>
-        <div class="darkmode"> <button> <i class="fa-solid fa-hand-point-up"></i> </button> </div> <!-- Hero section -->
+        <label for="darkmode">
+            <i class="fa-solid fa-hand-point-up"></i>
+        </label>
         <section class="hero" id="home">
             <div class="hero-title"> Hi I'm Anil Khand <h2>Full Stack Developer</h2>
                 <p> I love coding, challenges and learning new things. </p> <a href="./Assets/AnilKhand_CV.pdf" download
