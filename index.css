@@ -10,9 +10,9 @@
     --border-radius: 5px;
     --box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
     --transition-duration: 0.3s;
-    --font-size-large: 30px;
-    --font-size-medium: 20px;
-    --font-size-small: 16px;
+    --font-size-large: 20px;
+    --font-size-medium: 15px;
+    --font-size-small: 10px;
     --padding: 10px 20px;
     --margin: 10px;
 }
@@ -95,7 +95,10 @@ label {
 
 #darkmode:checked + .wrapper {
     background-color: var(--secondary-color);
-    color: var(--background-color);
+    color: var();
+    --primary-color: Grey;
+    --link-color: white;
+    --secondary-color: white;
 }
 
 .hero {
@@ -224,12 +227,14 @@ label {
 }
 
 .project-details iframe {
-    height: 800px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
 }
 
 .project-details a {
     box-shadow: var(--box-shadow);
+    height: 100%;
+    width: 45%;
 }
 
 .about1 {
@@ -242,7 +247,7 @@ label {
 }
 
 .aboutme-body {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     font-size: var(--font-size-large);
     justify-content: space-around;
@@ -281,13 +286,11 @@ label {
 
 .email {
     display: flex;
-    padding: 1cm;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-color);
     color: var(--background-color);
-    height: 60px;
-    font-size: 40px;
     border-radius: 150px;
     box-shadow: var(--box-shadow);
     text-decoration: none;
@@ -399,5 +402,54 @@ footer {
 
     .aboutme-body {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+
+    .title {
+        font-size: var(--font-size-medium);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1cm;
+    }
+
+    .hero-title {
+        padding: 1cm;
+        font-size: var(--font-size-medium);
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner {
+        flex-direction: column;
+        font-size: var(--font-size-medium);
+        border-radius: var(--border-radius);
+    }
+
+    .banner hr {
+        height: 50px;
+        margin: 20px 0;
+    }
+
+    .reward-background {
+        height: 80px;
+        width: 80px;
+    }
+
+    .skill {
+        margin: 5cm 0;
+        flex-direction: column;
+    }
+
+    .skills i {
+        font-size: 150px;
+    }
+}
