@@ -26,12 +26,13 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    padding: 20px;
+    /* padding: 20px; */
+    width: 100vw;
     transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
 }
 
 .wrapper {
-    margin: var(--margin);
+    /* margin: var(--margin); */
     display: flex;
     flex-direction: column;
 }
