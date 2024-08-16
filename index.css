@@ -129,6 +129,11 @@ label {
     text-align: center;
     border-radius: 25px;
     box-shadow: var(--box-shadow);
+    color: var(--background-color);
+    text-decoration: none;
+}
+.download i{
+    color: var(--background-color);
 }
 
 .hero-image img {
@@ -228,7 +233,7 @@ label {
 }
 
 .project-details iframe {
-    height: 100%;
+    height: 500px;
     width: 100%;
 }
 
