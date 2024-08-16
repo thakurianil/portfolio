@@ -8,7 +8,7 @@
     --link-color: var(--secondary-color);
     --link-hover-color: var(--background-color);
     --border-radius: 5px;
-    --box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.75);
+    --box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     --transition-duration: 0.3s;
     --font-size-large: 20px;
     --font-size-medium: 15px;
@@ -27,7 +27,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     /* padding: 20px; */
-    width: 100vw;
+    /* width: 100vw; */
     transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
 }
 
@@ -88,18 +88,25 @@ body {
 }
 
 label {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     padding: var(--padding);
     border-radius: var(--border-radius);
+    font-size: 30px;
+}
+#darkmode{
+    margin: 1cm;
 }
 
 #darkmode:checked + .wrapper {
-    background-color: var(--secondary-color);
-    color: var();
+    color: black);
     --primary-color: Grey;
     --link-color: white;
-    --secondary-color: white;
+    
+    --secondary-color: black;
+    --heading-color: var(--secondary-color);
+    --link-color: var(--secondary-color);
+    --link-hover-color: var(--background-color);
 }
 
 .hero {
