@@ -468,4 +468,8 @@ footer {
     .skills i {
         font-size: 150px;
     }
+    .project-details a {
+        width: 100%;
+    }
+    
 }
