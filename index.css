@@ -349,7 +349,9 @@ footer {
     flex-direction: column;
     margin: 10px;
 }
-
+.links h3{
+    color: var(--background-color);
+}
 .links a {
     margin: 10px;
     color: var(--background-color);
