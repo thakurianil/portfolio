@@ -35,7 +35,7 @@ body {
     /* margin: var(--margin); */
     /* display: flex;
     /* flex-direction: column; */ 
-    width : 100%;
+    /* width : 100%; */
     padding: 20px;
     
 }
@@ -276,12 +276,11 @@ label {
 }
 
 .social-contact {
-    display: flex;
+    /* display: flex; */
     font-size: var(--font-size-large);
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3cm;
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
 
 .social-container {
@@ -291,7 +290,7 @@ label {
 }
 
 .social-container a {
-    padding: 80px;
+    /* padding: 80px; */
     color: var(--link-color);
     text-decoration: none;
 }
@@ -300,7 +299,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4cm;
+    /* margin: 4cm 0 4cm  0 ; */
 }
 
 .email {
