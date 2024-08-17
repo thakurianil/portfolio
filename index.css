@@ -321,14 +321,15 @@ footer {
 
 .scroll {
     display: inline-block;
-    justify-content: right;
-    height: 100px;
-    width: 100px;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     bottom: 50px;
     right: 100px;
     position: fixed;
-    z-index: 1000;
+    /* z-index: 1000; */
     font-size: 50px;
     background-color: var(--primary-color);
     color: var(--background-color);
