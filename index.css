@@ -99,7 +99,7 @@ label {
 }
 
 #darkmode:checked + .wrapper {
-    color: black);
+    color: black;
     --primary-color: Grey;
     --link-color: white;
     
@@ -273,8 +273,11 @@ label {
 }
 
 .social-contact {
+    display: flex;
     font-size: var(--font-size-large);
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 3cm;
 }
 
