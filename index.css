@@ -33,8 +33,11 @@ body {
 
 .wrapper {
     /* margin: var(--margin); */
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    /* flex-direction: column; */ 
+    width : 100%;
+    padding: 20px;
+    
 }
 
 .header {
@@ -461,8 +464,11 @@ footer {
     }
 
     .skill {
-        margin: 5cm 0;
+        /* margin: 5cm 0; */
         flex-direction: column;
+    }
+    .skills{
+        flex-direction: row;
     }
 
     .skills i {
