@@ -290,7 +290,7 @@ label {
 }
 
 .social-container a {
-    /* padding: 80px; */
+    padding: 80px;
     color: var(--link-color);
     text-decoration: none;
 }
@@ -477,5 +477,7 @@ footer {
     .project-details a {
         width: 100%;
     }
-    
+    .social-container a{
+        padding: 0%;
+    }
 }
